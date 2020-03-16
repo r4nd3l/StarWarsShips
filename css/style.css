@@ -27,7 +27,7 @@ section{
 .card{
   position: relative;
   width: calc(50% - 20px);
-  background: #fff;
+  background: rgba(255,255,2555,0.8);
   margin: 10px;
   box-sizing: border-box;
   box-shadow: var(--shadow1-);
