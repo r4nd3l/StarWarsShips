@@ -35,7 +35,6 @@ function getStarWarsStarpships(progress, url = 'https://swapi.co/api/starships/?
 }
 
 function progressCallback(starships) {
-    //console.log(`${starships.length} loaded`);
 }
 
 getStarWarsStarpships(progressCallback)
@@ -97,9 +96,6 @@ getStarWarsStarpships(progressCallback)
             }
         })
 
-        //  clean(obj.results)
-        //obj.keys(oj).forEach(k => (!o[k] && o[k] !== undefined) && delete o[k]);
-
         appearedMostIndex = 0
         appeard = 0
         obj.results.forEach((o, index) => {
@@ -108,9 +104,6 @@ getStarWarsStarpships(progressCallback)
                 appearedMostIndex = index
             }
         })
-
-
-        //console.log(Math.max.apply(Math, obj.results.map(function (o) { return parseInt(o.films_count); })))
 
         obj.results.forEach((o, i) => {
             if (o != null || o != undefined || o != "") {
@@ -142,11 +135,7 @@ getStarWarsStarpships(progressCallback)
             }
         })
 
-
-        //console.log("Appeared the most films:" + obj.results[appearedMostIndex].name)
-        //console.log(starships.map(s => s))
         console.log(obj.results.map(e => e))
-        //console.log(JSON.stringify(obj.results))
 
     })
     .catch(console.error);
